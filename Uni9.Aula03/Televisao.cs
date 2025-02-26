@@ -20,9 +20,11 @@ class Televisao
     
     private const float TAMANHO_MINIMO = 22;
     private const float TAMANHO_MAXIMO = 80;
-    private int VOLUME_MAXIMO = 100;
-    private int VOLUME_MINIMO = 0;
-    private int VOLUME_PADRAO = 10;
+    private const int VOLUME_MAXIMO = 12;
+    private const int VOLUME_MINIMO = 0;
+    private const int VOLUME_PADRAO = 10;
+
+    private int _ultimoVolume = VOLUME_PADRAO;
     // Get: permite que seja executada a
     // leitura do valor atual da prop
     // Set: permite que seja atribuido um
@@ -33,7 +35,7 @@ class Televisao
     // internal: visiveis somente no namespace
     // protected: visiveis somente na classe e nas classes que herdam
     // private: visiveis soemente na classe que foram criadas
-    public float Tamanho {get; }
+    public float Tamanho { get; }
     public int Resolucao { get; set; }
     public int Volume { get; private set; }
     public int Canal { get; set; }
@@ -54,4 +56,18 @@ class Televisao
             Console.WriteLine("A tv já está no volume mínimo permitido!");
     }
     
+    public void AlternarModoMudo()
+    {
+        if(Volume >= VOLUME_MINIMO)
+        {
+             _ultimoVolume = Volume;
+             Volume = VOLUME_MINIMO;
+             Console.WriteLine("A TV está no modo MUTE.");
+        }
+        else
+        {
+            Volume = _ultimoVolume;
+            Console.WriteLine($"O volume da TV é {Volume}");
+        } 
+    }
 } 

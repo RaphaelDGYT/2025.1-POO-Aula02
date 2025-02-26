@@ -4,6 +4,8 @@ VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uni9.Aula03", "Uni9.Aula03\Uni9.Aula03.csproj", "{415E16E4-FC95-25EC-B45A-FAC8BDB0343C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uni9.Aula03.test", "Uni9.Aula03.test\Uni9.Aula03.test.csproj", "{415E16E4-FC95-25EC-B45A-FAC8BDB0343C}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uni9.Aula01", "Uni9.Aula01\Uni9.Aula01.csproj", "{5896A4A7-1EF6-8ABE-BADC-45CF2CF504D5}"
 EndProject
 Global
